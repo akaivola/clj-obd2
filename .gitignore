@@ -1,0 +1,4 @@
+resources/public/js/compiled
+target
+figwheel_server.log
+resources/public/css/style.css
