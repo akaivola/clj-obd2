@@ -1,4 +1,4 @@
-(defproject obd "0.1.0-SNAPSHOT"
+(defproject clj-obd2 "0.1.0-SNAPSHOT"
   :description ""
   :url ""
   :license {:name "Eclipse Public License"
