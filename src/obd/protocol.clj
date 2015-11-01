@@ -1,14 +1,11 @@
 (ns obd.protocol
   (:require
    [manifold.stream :as s]
-   [gloss.core :as g]
+   [gloss.core :refer [defcodec]:as g]
    [gloss.io :as io]))
 
-(def at-protocol
-  (g/compile-frame
-   (g/string :utf-8 :delimiters ["\n"])
-   identity
-   identity))
+(defcodec at-protocol
+  (g/string :utf-8 :delimiters ["\n"]))
 
 (defn wrap-duplex-stream
   [protocol s]
