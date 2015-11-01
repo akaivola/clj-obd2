@@ -11,7 +11,8 @@
                  [manifold "0.1.1"] ; transitive of aleph
                  [gloss "0.2.5"]    ; byte protocol abstraction library
                  [byte-streams "0.2.0"]
-                ]
+                 [com.taoensso/timbre "4.1.4"]
+                 ]
   :main ^:skip-aot obd.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
