@@ -1,7 +1,8 @@
 (ns obd.core
-  (:gen-class))
+  (:gen-class)
+  (:require [clojure.core.async :refer [go go-loop chan >! <!]]
+            [manifold.stream :as s]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
   (println "Hello, World!"))
